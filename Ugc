@@ -8,12 +8,16 @@ end)
 Section:NewButton("Simply Spy", "Hi", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua"))()
 end)
-Section:NewButton("Dex V4", "Hi", function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/GtcGMC19'),true))()
+Section:NewButton("Auto Clicker", "Hi", function()
+getgenv().Settings = {
+    ["Auto Click Keybind"] = "V", -- Use an UpperCase letter or KeyCode Enum. Ex: Enum.KeyCode.Semicolon
+    ["Lock Mouse Position Keybind"] = "B",
+    ["Right Click"] = false,
+    ["GUI"] = true, -- A drawing gui that tells you what is going on with the autoclicker.
+    ["Delay"] = 0 -- 0 for RenderStepped, other numbers go to regular wait timings.
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BimbusCoder/Script/main/Auto%20Clicker.lua"))()
 end)
 Section:NewButton("SubPlaces", "Hi", function()
 loadstring(game:HttpGet(('https://pastebin.com/raw/C39cfVy1'),true))()
 end)
-Section:NewButton("Fun", "Hi", function()
- game.Players.LocalPlayer:Kick("Banned for exploiting.")
- end)
